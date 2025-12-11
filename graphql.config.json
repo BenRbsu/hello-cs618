@@ -1,0 +1,4 @@
+{
+  "schema": "https://ideal-space-cod-jjrjp6wqw56r3vvx-3000.app.github.dev/graphql",
+  "documents": "src/api/graphql/**/*.{js,jsx}"
+}

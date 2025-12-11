@@ -3,7 +3,7 @@ export const getPosts = async (queryParams) => {
     `${import.meta.env.VITE_BACKEND_URL}/posts?` +
       new URLSearchParams(queryParams)
   );
-  return await res.json();
+   return await res.json();
 };
 
 export const getPostById = async (postId) => {
@@ -20,6 +20,7 @@ export const createPost = async (token, post) => {
     },
     body: JSON.stringify(post),
   });
+  
   if (!res.ok) {
     const text = await res.text();
     throw new Error(
